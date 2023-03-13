@@ -23,10 +23,13 @@ let foldBack f lst acc =
         | x::xs -> aux xs (fun r -> c (f x r))
     aux lst id
 
+
 //Exercise 5.4
-let factA x =
+let factC x =
     let rec aux acc =
         function
         | 0 -> acc
         | x -> aux (x * acc) (x - 1)
     aux 1 x
+
+//Exercise 5.5
