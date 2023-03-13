@@ -14,7 +14,6 @@ let length lst =
         | x::xs -> aux xs (acc+1)
     aux lst 0
 
-
 //Exercise 5.3
 let foldBack f lst acc =
     let rec aux lst c =
@@ -23,7 +22,6 @@ let foldBack f lst acc =
         | x::xs -> aux xs (fun r -> c (f x r))
     aux lst id
 
-
 //Exercise 5.4
 let factC x =
     let rec aux acc =
@@ -31,5 +29,3 @@ let factC x =
         | 0 -> acc
         | x -> aux (x * acc) (x - 1)
     aux 1 x
-
-//Exercise 5.5
